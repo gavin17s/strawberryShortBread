@@ -43,6 +43,7 @@ def main():
             
             combinedBin = str(format(qamPoints[qnum1][inum1], '04b')) + str(format(qamPoints[qnum2][inum2], '04b'))
 
-            print(chr(int(combinedBin, 2)))
+            print(chr(int(combinedBin, 2)), end=")
+    print("\n")
             
 main()
