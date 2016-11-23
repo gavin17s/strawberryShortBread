@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>sekurian: Overview</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/mainStyle.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/lightbox.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <section id="headspacer">
+      <h1>
+        sekurian
+      </h1>
+      <p class="tagline">
+        Home Automation and Security
+      </p>
+      <div class="dropdown" style="float:right;">
+        <button class="dropbutton">Eric Shin &#x25BC</button>
+        <div class="dropdown-content">
+          <a href="javascript:void(0)">Preferences</a>
+          <a href="javascript:void(0)">Account Settings</a>
+          <a href="javascript:void(0)">Log Off</a>
+        </div>
+      </div>
+    </section>
+  
+    <ul class="sidenav">
+      <li><a class="current" href="javascript:void(0)">Overview</a></li>
+      <li><a href="cameras.html">Cameras</a></li>
+      <li><a href="javascript:void(0)">Entrances</a></li>
+      <li><a href="javascript:void(0)">Windows</a></li>
+      <li><a href="javascript:void(0)">Lighting</a></li>
+      <li><a href="javascript:void(0)">AC</a></li>
+      <li><a href="javascript:void(0)">Appliances</a></li>
+      <li><a href="javascript:void(0)">Statistics</a></li> 
+    </ul>
+    
+    <div style="margin-top: 65px;margin-left:11%;padding:1px 16px;">
+      <p>
+        <section id="overviewcamera">
+          <section id="cameraspacer">
+            <p class="cameraheading">Cameras - Movement detected in "Living Room", please review!</p>
+            <div class="dismiss">
+                <input type="button" value="Dismiss" onclick="dismiss()">
+            </div>
+          </section>
+          <section id="overviewimg">
+            <a href="img/livingroomcat1.jpg" data-lightbox="livingroom"><img src="img/livingroomcat1.jpg" width="180" height="120"></a>
+            <a href="img/livingroomcat2.jpg" data-lightbox="livingroom"><img src="img/livingroomcat2.jpg" width="180" height="120"></a>
+            <a href="img/livingroomcat3.jpg" data-lightbox="livingroom"><img src="img/livingroomcat3.jpg" width="180" height="120"></a>
+            <a href="img/livingroomcat4.jpg" data-lightbox="livingroom"><img src="img/livingroomcat4.jpg" width="180" height="120"></a>
+            <a href="img/livingroomcat5.jpg" data-lightbox="livingroom"><img src="img/livingroomcat5.jpg" width="180" height="120"></a><br>
+          </section>
+        </section>
+        <h3>Entrances</h3>
+        Garage Door
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="garagedoor" checked>
+          <label class="onoffswitch-label" for="garagedoor">
+            <span class="opencloseswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+        <hr>
+        <h3>Windows</h3>
+        Living Room - Window #1
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="window1" checked>
+          <label class="onoffswitch-label" for="window1">
+            <span class="opencloseswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+        <hr>
+        Master Bedroom - Window #3
+        <div class="onoffswitch">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="window2" checked>
+          <label class="onoffswitch-label" for="window2">
+            <span class="opencloseswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+        <hr>
+        <h3>AC</h3>
+        AC to be set to 20&#8451 at 16:45 for "Living Room" and "Master Bedroom" until 23:00. (Repeat)
+        <div class="configac">
+            <input type="submit" value="Configure">
+        </div>
+        <hr>
+        AC to be set to 22&#8451 at 06:00 for "Living Room" until 08:00. (Repeat)
+        <div class="configac">
+            <input type="submit" value="Configure">
+        </div>
+        <hr>
+        <h3>Appliances</h3>
+        No non essential appliances are currently on.
+        <hr>
+      </p>
+      
+      <div class="footer">
+        &copy 2016 Copyright <a href="http://gavin.su">Gavin Su</a>.
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript">
+      function dismiss() {
+    var elem = document.getElementById('overviewcamera');
+    elem.parentNode.removeChild(elem);
+    return false;
+}
+    </script>
+  </body>
+</html>

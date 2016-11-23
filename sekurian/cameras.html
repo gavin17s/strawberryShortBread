@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>sekurian: Cameras</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/mainStyle.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/lightbox.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <section id="headspacer">
+      <h1>
+        sekurian
+      </h1>
+      <p class="tagline">
+        Home Automation and Security
+      </p>
+      <div class="dropdown" style="float:right;">
+        <button class="dropbutton">Eric Shin &#x25BC</button>
+        <div class="dropdown-content">
+          <a href="javascript:void(0)">Preferences</a>
+          <a href="javascript:void(0)">Account Settings</a>
+          <a href="javascript:void(0)">Log Off</a>
+        </div>
+      </div>
+    </section>
+  
+    <ul class="sidenav">
+      <li><a href="overview.html">Overview</a></li>
+      <li><a class="current" href="javascript:void(0)">Cameras</a></li>
+      <li><a href="javascript:void(0)">Entrances</a></li>
+      <li><a href="javascript:void(0)">Windows</a></li>
+      <li><a href="javascript:void(0)">Lighting</a></li>
+      <li><a href="javascript:void(0)">AC</a></li>
+      <li><a href="javascript:void(0)">Appliances</a></li>
+      <li><a href="javascript:void(0)">Statistics</a></li> 
+    </ul>
+    
+    <div style="margin-top: 65px;margin-left:15%;padding:1px 16px;">
+      <section id="four_columns">
+        <article class="img-item">
+          <figure>
+            <a class="lightboxImgs" href="img/livingroom.jpg" data-lightbox="livingroom"><img id="img_window1" src="img/livingroom.jpg" width="410" height="280"></a>
+            <figcaption>
+              <strong>Living Room 
+                <div class="onoffswitch">
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="window1" value="window1" checked>
+                    <label class="onoffswitch-label" for="window1">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="img-item">
+          <figure>
+            <a class="lightboxImgs" href="img/kitchen.jpg" data-lightbox="kitchen"><img id="img_window2" src="img/kitchen.jpg" width="410" height="280"></a>
+            <figcaption>
+              <strong>Kitchen
+                <div class="onoffswitch">
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="window2" value="window2" checked>
+                    <label class="onoffswitch-label" for="window2">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="img-item">
+          <figure>
+            <a class="lightboxImgs" href="img/masterbedroom.jpg" data-lightbox="masterbedroom"><img id="img_window3" src="img/masterbedroom.jpg" width="410" height="280"></a>
+            <figcaption>
+              <strong>Master Bedroom
+                <div class="onoffswitch">
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="window3" value="window3" checked>
+                    <label class="onoffswitch-label" for="window3">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="img-item">
+          <figure>
+            <a class="lightboxImgs" href="img/guestbedroom.jpg" data-lightbox="guestbedroom"><img id="img_window4" src="img/guestbedroom.jpg" width="410" height="280"></a>
+            <figcaption>
+              <strong>Guest Bedroom
+                <div class="onoffswitch">
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="window4" value="window4" checked>
+                    <label class="onoffswitch-label" for="window4">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="img-item">
+          <figure>
+            <a class="lightboxImgs" href="img/garage.jpg" class="cam-display" data-lightbox="garage"><img id="img_window5" src="img/garage.jpg" width="410" height="280"></a>
+            <figcaption>
+              <strong>Garage
+                <div class="onoffswitch">
+                  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="window5" value="window5" checked>
+                    <label class="onoffswitch-label" for="window5">
+                      <span class="onoffswitch-inner"></span>
+                      <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+              </strong>
+            </figcaption>
+          </figure>
+        </article>
+        <br class="clear"/>
+      </section>
+      
+      <div class="footer">
+        &copy 2016 Copyright <a href="http://gavin.su">Gavin Su</a>.
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript">
+			//wire up DOM events and effects based on document load
+			$(document).ready(function() {
+				var full_opacity = 1;
+				var faded_opacity = 0.3;
+				var fade_speed = 'fast';				
+				var objid;
+
+				//set opacity for images based on initial checked state
+				//we do this here because we want to 
+				//ensure the browser has javascript support 
+				//and can understand our jQuery
+				$('input[name="onoffswitch"]').each(function() {
+
+					//we need the image associated with this checkbox
+					//i am assuming the associated image tag has an ID of "img_" and whatever the value of the associated checkbox is
+					//e.g., img_miss_alabama_usa is the id for the image associated with the checkbox that has the checked value miss_alabama_usa
+					objid = "#img_" + $(this).val();
+					
+					if($(this).prop('checked')) {
+						//full opacity for prechecked images
+						$(objid).css('opacity', full_opacity);
+					}
+					else {
+						//partial opacity for unchecked images
+						$(objid).css('opacity', faded_opacity);
+					}
+				});
+
+				//handle change to the checkbox state
+				//click will work here, too; try that if you have problems
+				$('input[name="onoffswitch"]').change(function() {
+					//same method as above for associating a checkbox and its image
+					var objid = "#img_" + $(this).val();
+          $lightboxes = $(".lightboxImgs");
+          //save the old data attributes in an array
+          var lightboxData = $lightboxes.map(function()
+          {
+            return $(this).data("lightbox");
+          }).get();
+          console.log($(this).prop('checked'));
+					if($(this).prop('checked')) {
+						//full opacity for image if associated checkbox is checked
+						$(objid).fadeTo(fade_speed, full_opacity);
+            
+            $(objid).parent().unbind('click');
+            $lightboxes.attr("data-lightbox", function(i, old)
+            {
+              return lightboxData[i];
+            });
+					}
+					else {
+						//partial opacity for image if associated checkbox is unchecked
+						$(objid).fadeTo(fade_speed, faded_opacity);
+
+            $(objid).parent().removeAttr("data-lightbox");
+            $(objid).parent().click(function(e)
+            {
+              e.preventDefault();
+            });
+					}
+				});
+			});
+		</script>
+  </body>
+</html>
