@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<head>
+		<title>CS @ UoA</title>
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<link rel="icon" type="image/png" href="http://redsox.tcs.auckland.ac.nz/ups/logo.svg">
+	</head>
+
+	<body>
+
+		<img class="logo" src="http://redsox.tcs.auckland.ac.nz/ups/logo.svg" alt="UoA logo">
+		<ul class="tab" id="rTab">
+			<li><a href="#home" class="tablinks" onclick="openPage(event, 'Home')">Home</a></li>
+			<li><a href="#courses" class="tablinks" onclick="openPage(event, 'Courses');getCourses();">Courses</a></li>
+			<li><a href="#people" class="tablinks" onclick="openPage(event, 'People');getPeople();">People</a></li>
+  			<li><a href="#news" class="tablinks" onclick="openPage(event, 'News');getNews();">News</a></li>
+  			<li><a href="#notices" class="tablinks" onclick="openPage(event, 'Notices');getNotices();">Notices</a></li>
+  			<li><a href="#guestbook" class="tablinks" onclick="openPage(event, 'Guestbook');getGuestBook();">Guestbook</a></li>
+			<li class="menu"><a href="#menu" onclick="changeMenu()">Menu</a>
+  </li>
+		</ul>
+
+		<div id="Home" class="tabcontent">
+  			<p>Welcome to New Zealand's leading computer science department. We pride ourselves on the excellence of our staff and our students.</p>
+		</div>
+
+		<div id="Courses" class="tabcontent">
+			<p id="show_courses"></p>
+		</div>
+
+		<div id="People" class="tabcontent">
+			<p id="show_people"></p>
+		</div>
+
+		<div id="News" class="tabcontent">
+			<p id="show_news"></p>
+		</div>
+
+		<div id="Notices" class="tabcontent">
+  			<p id="show_notices"></p>	
+		</div>
+
+		<div id="Guestbook" class="tabcontent">
+			<textarea type="text" name="comments" id="postcomment" placeholder="Say something nice..."></textarea>
+			<br>
+			<input name="name" id="postname" placeholder="Name">
+			<button onclick="postComment()">Submit</button>		
+  			<p id="show_guestbook"></p>	
+		</div>
+
+		<script src="home.js"></script>
+	</body>
+</html>
