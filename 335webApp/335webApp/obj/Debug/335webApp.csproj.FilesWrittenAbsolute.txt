@@ -1,0 +1,12 @@
+/home/gavinsu/Documents/projects/335webApp/335webApp/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/335webApp.dll.mdb
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/335webApp.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/obj/Debug/335webApp.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/obj/Debug/335webApp.dll.mdb
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/Microsoft.Web.Infrastructure.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/System.Web.Razor.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/System.Web.Helpers.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/System.Web.WebPages.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/System.Web.WebPages.Deployment.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/System.Web.WebPages.Razor.dll
+/home/gavinsu/Documents/projects/335webApp/335webApp/bin/System.Web.Mvc.dll

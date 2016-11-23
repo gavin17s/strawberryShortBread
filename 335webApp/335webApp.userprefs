@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="335webApp/335webApp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="firefox" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="335webApp/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="335webApp/Controllers/HomeController.cs" Line="11" Column="3" />
+      <File FileName="335webApp/Views/Home/Index.aspx" Line="8" Column="42" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
